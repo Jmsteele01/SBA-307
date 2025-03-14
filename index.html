@@ -14,19 +14,26 @@
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
-    <select name="Nav" id="navigation">
-        <option value="nav">Nav</option>
-        <option value="egg">Egg</option>
-        <option value="chicken">Chicken</option>
+  <!-- Navigation Bar -->
+    <select name="Nav" id="navigation" onchange="window.open(this.value,'_self')">
+        <option value="nav">Navigation</option>
+        <option value="./pages/egg.html">Egg</option>
+        <option value="./pages/chicken.html">Chicken</option>
     </select>
+
+    <!-- Page header and opening paragraph -->
     <h1>Which came first, the chicken or the egg?</h1>
     <p>It is an age old question that this site hopes to properly document and aquire new data for. <br>Below we have links to a few articles supporting both sides of this arguments. <br>Once you have read them, please let us know which you believe. <br>Did the chicken come first? Or was it the egg?</p>
- 
+    
+    <!-- Egg Gif -->
     <img src="./images/EH.gif"></img>
+    <br>
+
+    <!-- Web Links Table -->
     <div class="container text-center">
     <h2><u>Arguments:</u></h2>
     <table class="table">
-        <thead>
+        <thead class="table-active">
            <tr>
                <th>Chicken</th>
                <th>Egg</th>
@@ -34,22 +41,26 @@
         </thead>
            <tbody>
              <tr>
-               <td><a href="https://www.poultryworld.net/home/cracked-the-chicken-came-before-the-egg/">Cracked: The chicken came before the egg</a></td>
-               <td><a href="https://www.popularmechanics.com/science/animals/a62940858/egg-chickin-mitosis/">It’s Official: The Egg Came Before the Chicken</a></td>
+               <td class="table-warning"><a href="https://www.poultryworld.net/home/cracked-the-chicken-came-before-the-egg/" target="blank">Cracked: The chicken came before the egg</a></td>
+               <td class="table-info"><a href="https://www.popularmechanics.com/science/animals/a62940858/egg-chickin-mitosis/" target="blank">It’s Official: The Egg Came Before the Chicken</a></td>
              </tr>
              <tr>
-              <td><a href="https://www.cbsnews.com/news/chicken-came-before-the-egg-scientific-proof/">Chicken Came Before the Egg: "Scientific Proof"</a></td>
-              <td><a href="https://www.treehugger.com/finally-answered-which-came-first-the-chicken-or-the-egg-4864321">Finally Answered! Which Came First, the Chicken or the Egg?</a></td>
+              <td class="table-warning"><a href="https://www.cbsnews.com/news/chicken-came-before-the-egg-scientific-proof/" target="blank">Chicken Came Before the Egg: "Scientific Proof"</a></td>
+              <td class="table-info"><a href="https://www.treehugger.com/finally-answered-which-came-first-the-chicken-or-the-egg-4864321" target="blank">Finally Answered! Which Came First, the Chicken or the Egg?</a></td>
             </tr>
            </tbody>
        </table>
+       <br>
+
+       <!-- Final choice -->
        <h3>Which do you believe?</h3>
        <sec>    
         <form action="./pages/chicken.html">
-            <input type="submit" value="The chicken came first" >
+            <input type="submit" value="The chicken came first" style="background-color: rgb(241, 241, 152);">
             </form>
             <form action="./pages/egg.html">
-                <input type="submit" value="The egg came first" >
+                <input type="submit" value="The egg came first" style="background-color: rgb(176, 230, 255);">
                 </form>
     </sec>
+    <br>
 </html>

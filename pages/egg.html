@@ -14,12 +14,19 @@
     <link rel="stylesheet" href="../styles/index.css">
 </head>
 <body>
+  <select name="Nav" id="navigation" onchange="window.open(this.value,'_self')">
+    <option value="nav">Navigation</option>
+    <option value="../index.html">Home Page</option>
+    <option value="../pages/chicken.html">Chicken</option>
+</select>
+
     <h1>The Egg Came First</h1>
 
     <img src="../images/egg.png" width="300px"></img>
     <h2>In a few sentences, tell us why you think so!</h2>
     <why>
         <textarea rows="10" cols="75"></textarea><br>
-        <input type="submit">
-    </why>
+        <form action="../index.html">
+          <input type="submit" value="Submit & Return to Home">
+        </form>    </why>
 </body>
