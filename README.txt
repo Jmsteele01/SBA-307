@@ -1,3 +1,6 @@
+Chicken or Egg:
+This website has a home page that gives a brief summary of its purpose with links to several articles regarding its titular question. The other two pages ask for user input regarding their answer to the question.
+
 Egg image: https://commons.wikimedia.org/wiki/File:An_egg.png
 Chicken image: https://commons.wikimedia.org/wiki/File:202104_Chicken.svg
 Egg hatching gif: https://www.deviantart.com/retsamys/art/Egg-Hatch-329488994
